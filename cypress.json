@@ -1,0 +1,15 @@
+{
+    "env": {
+      "requestBaseUrl": "http://localhost:3001"
+    },
+    "baseUrl": "http://localhost:3000",
+    "watchForFileChanges": false,
+    "chromeWebSecurity": false,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "cypress/results",
+      "overwrite": false,
+      "html": true,
+      "json": true
+    }
+  }

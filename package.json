@@ -1,0 +1,34 @@
+{
+  "name": "cypressproject",
+  "version": "1.0.0",
+  "description": "Proyecto de testing usando Cypress.io para correr las pruebas",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.5.0"
+  },
+  "devDependencies": {
+    "axios": "^0.22.0",
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "./node_modules/.bin/cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tattiana-alfaro/CypressProject.git"
+  },
+  "keywords": [
+    "UCreativa",
+    "Cypress"
+  ],
+  "author": "Tattiana Alfaro Castañeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tattiana-alfaro/CypressProject/issues"
+  },
+  "homepage": "https://github.com/Tattiana-alfaro/CypressProject#readme"
+}
