@@ -1,0 +1,55 @@
+{
+    "actions": [
+        {
+            "type": "xstate.stop",
+            "activity": {
+                "src": {
+                    "type": "performLogin"
+                },
+                "id": "performLogin",
+                "type": "xstate.invoke"
+            }
+        },
+        {
+            "type": "redirectHomeAfterLogin"
+        }
+    ],
+    "activities": {
+        "performLogin": false,
+        "performLogout": false
+    },
+    "meta": {},
+    "events": [],
+    "value": "authorized",
+    "context": {
+        "user": {}
+    },
+    "_event": {
+        "name": "done.invoke.performLogin",
+        "data": {
+            "type": "done.invoke.performLogin",
+            "data": {
+                "user": {}
+            }
+        },
+        "$$type": "scxml",
+        "type": "external",
+        "origin": "performLogin"
+    },
+    "_sessionid": "x:0",
+    "event": {
+        "type": "done.invoke.performLogin",
+        "data": {
+            "user": {}
+        }
+    },
+    "historyValue": {
+        "current": "authorized",
+        "states": {}
+    },
+    "history": {},
+    "children": {},
+    "done": false,
+    "changed": true,
+    "tags": []
+}

@@ -1,4 +1,5 @@
 # CypressProject
+
 Variables de entorno requeridas
 - testUser
 - testPassword
@@ -8,3 +9,8 @@ Por ejemplo
     "testUser" : "Katharina_Bernier",
     "testPassword" : "s3cret"
 }
+
+Para correr el proyecto por favor utilizar el comando 
+`npm run cy:open`
+
+Los primeros 

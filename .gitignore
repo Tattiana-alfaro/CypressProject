@@ -2,4 +2,3 @@ node_modules
 cypress/integration/1-getting-started
 cypress/integration/2-advanced-examples
 cypress.env.json
-cypress/support/auth-state.json
