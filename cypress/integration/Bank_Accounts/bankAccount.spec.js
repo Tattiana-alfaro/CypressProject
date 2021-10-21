@@ -23,19 +23,10 @@ describe('Bank Accounts Tests', () => {
             cy.get('[data-test="bankaccount-submit"]').should('be.disabled');       
             cy.get('#bankaccount-accountNumber-input').type(accountNumber);
             cy.get('[data-test="bankaccount-submit"]').should('not.be.disabled').click();
-            cy.get('[data-test^=bankaccount-list]').filter(':contains("${bankName}")').first().find('button').click(); 
-            cy.visit('/bankaccounts');
-            cy.wait('@bankaccounts');      
-                    
-        });
+            cy.get('[data-test^="bankaccount-list-item"]').filter(':contains("BankName")').last().find('button').click().should('have.text', '');
+            cy.get('[data-test^="bankaccount-list-item"]').filter(':contains("BankName")').last().find('p').should('have.text', 'Delete');
+
+
+            });                    
         });
     });
-
-
-
-
-context('Negative Scenarios', () => {
-    it('should delete accounts', () => {
-    
-    });
-});
