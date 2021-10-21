@@ -10,7 +10,7 @@ describe('Login Tests', () => {
 
     it('should navigate to bank accounts', () => {
       cy.visit('/bankaccounts');
-      cy.get('[data-test="bankaccount-new"]').and('be.visible').click();
+      cy.get('[data-test="bankaccount-new"]').and('be.visible').click({force: true});
     });
   });
 

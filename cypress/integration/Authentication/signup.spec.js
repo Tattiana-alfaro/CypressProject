@@ -1,5 +1,8 @@
 /// <reference types="Cypress" />
-
+const uuid = () => Cypress._.random(0, 1e6);
+const id = uuid();
+const testUserName = `testUsername${id}`;
+const testPassword = `password${id}`;
 
 describe('Login Tests', () => {
     // Hooks
@@ -11,13 +14,11 @@ describe('Login Tests', () => {
   
     context('Positive Scenarios', () => {
       it('should create user and login with the new user', () => {
-        const uuid = () => Cypress._.random(0, 1e6);
-        const id = uuid();
-        const testUserName = `testUsername${id}`;
-        const testPassword = `password${id}`;
+
         
         cy.get('#firstName').type('Cypress Test');
         cy.get('#lastName').type('User');
+        console.log(testPassword)
         cy.get('#username').type(testUserName);
         cy.get('#password').type(testPassword);
 
