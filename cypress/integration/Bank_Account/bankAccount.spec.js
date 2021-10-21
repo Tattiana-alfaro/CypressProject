@@ -16,7 +16,7 @@ describe('Bank Accounts Tests', () => {
     });
 
     context('Positive Scenarios', () => {
-        it('create new account', () => {
+        it('should create new account', () => {
             cy.get('[data-test="bankaccount-new"]').click({force: true});
             cy.get('#bankaccount-bankName-input').type(bankName);       
             cy.get('#bankaccount-routingNumber-input').type(routingNumber);
@@ -28,7 +28,7 @@ describe('Bank Accounts Tests', () => {
 
             });
             
-        it('delete an account', () => {
+        it('should delete an account', () => {
             cy.get('[data-test^="bankaccount-list-item"]').filter(':contains("BankName")').last().find('button').click().should('have.text', 'Delete');
         })
         });
